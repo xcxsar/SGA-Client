@@ -48,17 +48,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MenuPrincipalDirectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipalDirectivo.Designer.cs">
+      <DependentUpon>MenuPrincipalDirectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIHelper.cs" />
     <Compile Include="InicioDeSesionView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InicioDeSesionView.Designer.cs">
       <DependentUpon>InicioDeSesionView.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuPrincipalProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipalProfesor.Designer.cs">
+      <DependentUpon>MenuPrincipalProfesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManejadorDeFuentes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="InicioDeSesionView.resx">
       <DependentUpon>InicioDeSesionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipalDirectivo.resx">
+      <DependentUpon>MenuPrincipalDirectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipalProfesor.resx">
+      <DependentUpon>MenuPrincipalProfesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -68,6 +87,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Fonts\Bevan-Regular.ttf" />
     <None Include="Fonts\Inter-Bold.ttf" />
