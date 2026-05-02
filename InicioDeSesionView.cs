@@ -22,8 +22,15 @@ namespace SGA_Client
                 ControlStyles.ResizeRedraw,
                 true);
             this.UpdateStyles();
+
             title.Font = ManejadorDeFuentes.GetFont("Bevan", 48);
             header.Font = ManejadorDeFuentes.GetFont("Inter", 18, FontStyle.Bold);
+            labelUsuario.Font = ManejadorDeFuentes.GetFont("Inter", 12);
+            labelPassword.Font = ManejadorDeFuentes.GetFont("Inter", 12);
+            textBoxUsuario.Font = ManejadorDeFuentes.GetFont("Inter", 12);
+            textBoxPassword.Font = ManejadorDeFuentes.GetFont("Inter", 12);
+            buttonSalir.Font = ManejadorDeFuentes.GetFont("Inter", 12);
+            buttonIniciarSesion.Font = ManejadorDeFuentes.GetFont("Inter", 12);
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -35,7 +42,7 @@ namespace SGA_Client
             e.Graphics.Clear(Color.White);
 
             int spacing = 20;
-            using (Pen gridPen = new Pen(Color.LightGray, 1))
+            using (Pen gridPen = new Pen(Color.FromArgb(230, 230, 230), 1))
             {
                 for (int x = 0; x < this.ClientSize.Width; x += spacing)
                 {
@@ -46,6 +53,11 @@ namespace SGA_Client
                     e.Graphics.DrawLine(gridPen, 0, y, this.ClientSize.Width, y);
                 }
             }
+        }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
