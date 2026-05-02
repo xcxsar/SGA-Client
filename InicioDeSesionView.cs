@@ -35,29 +35,22 @@ namespace SGA_Client
 
         protected override void OnPaint(PaintEventArgs e)
         {
-            // Always call base first
             base.OnPaint(e);
 
-            // Clear the background with a solid color (e.g., White)
-            e.Graphics.Clear(Color.White);
-
-            int spacing = 20;
-            using (Pen gridPen = new Pen(Color.FromArgb(230, 230, 230), 1))
-            {
-                for (int x = 0; x < this.ClientSize.Width; x += spacing)
-                {
-                    e.Graphics.DrawLine(gridPen, x, 0, x, this.ClientSize.Height);
-                }
-                for (int y = 0; y < this.ClientSize.Height; y += spacing)
-                {
-                    e.Graphics.DrawLine(gridPen, 0, y, this.ClientSize.Width, y);
-                }
-            }
+            UIHelper.DibujarCuadriculaFondo(this, e);
         }
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void buttonIniciarSesion_Click(object sender, EventArgs e)
+        {
+            MenuPrincipalDirectivo menu = new MenuPrincipalDirectivo(this);
+            menu.Show();
+
+            this.Hide();
         }
     }
 }
