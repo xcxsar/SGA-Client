@@ -13,7 +13,12 @@ namespace SGA_Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            ManejadorDeFuentes.Initialize();
+
             Application.Run(new InicioDeSesionView());
+
+            ManejadorDeFuentes.Dispose();
         }
     }
 }
