@@ -1,9 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using SGA_Client.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,10 +38,49 @@ namespace SGA_Client
             UIHelper.DibujarCuadriculaFondo(this, e);
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private async void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
-            _inicioDeSesionView.Show();
+            try
+            {
+                btnSalir.Enabled = false;
+                string url = "https://localhost:44342/api/logout";
+
+                HttpResponseMessage response = await SesionGlobal.WebCliente.PostAsync(url, null);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var datos = await response.Content.ReadAsStringAsync();
+                    dynamic data = JsonConvert.DeserializeObject(datos);
+
+
+                    MessageBox.Show($"{data.message}");
+
+                    _inicioDeSesionView.LimpiarTodo();
+                    _inicioDeSesionView.Show();
+                    this.Close();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Error al cerrar sesión: Verifique sus credenciales.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo conectar con el servidor: " + ex.Message);
+            }
+            finally
+            {
+                btnSalir.Enabled = true;
+            }
+        }
+
+        private void MenuPrincipalProfesor_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!_inicioDeSesionView.Visible)
+            {
+                Application.Exit();
+            }
         }
     }
 }
