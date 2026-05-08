@@ -21,5 +21,15 @@ namespace SGA_Client
                 }
             }
         }
+
+        public static void AplicarFuenteInterAControles(Control contenedor, int tamaño = 12, FontStyle estilo = FontStyle.Regular)
+        {
+            contenedor.Font = ManejadorDeFuentes.GetFont("Inter", tamaño, estilo);
+
+            foreach (Control control in contenedor.Controls)
+            {
+                AplicarFuenteInterAControles(control, tamaño, estilo);
+            }
+        }
     }
 }

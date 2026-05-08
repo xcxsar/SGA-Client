@@ -27,14 +27,9 @@ namespace SGA_Client
                 true);
             this.UpdateStyles();
 
+            UIHelper.AplicarFuenteInterAControles(this, 12);
             title.Font = ManejadorDeFuentes.GetFont("Bevan", 48);
             header.Font = ManejadorDeFuentes.GetFont("Inter", 18, FontStyle.Bold);
-            labelUsuario.Font = ManejadorDeFuentes.GetFont("Inter", 12);
-            labelPassword.Font = ManejadorDeFuentes.GetFont("Inter", 12);
-            textBoxUsuario.Font = ManejadorDeFuentes.GetFont("Inter", 12);
-            textBoxPassword.Font = ManejadorDeFuentes.GetFont("Inter", 12);
-            buttonSalir.Font = ManejadorDeFuentes.GetFont("Inter", 12);
-            buttonIniciarSesion.Font = ManejadorDeFuentes.GetFont("Inter", 12);
         }
 
         protected override void OnPaint(PaintEventArgs e)
