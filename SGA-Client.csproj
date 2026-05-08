@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
     </Reference>
@@ -54,6 +57,7 @@
     <Compile Include="MenuPrincipalDirectivo.Designer.cs">
       <DependentUpon>MenuPrincipalDirectivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\UsuarioModel.cs" />
     <Compile Include="UIHelper.cs" />
     <Compile Include="InicioDeSesionView.cs">
       <SubType>Form</SubType>
@@ -92,6 +96,7 @@
     <EmbeddedResource Include="Fonts\Bevan-Regular.ttf" />
     <None Include="Fonts\Inter-Bold.ttf" />
     <None Include="Fonts\Inter-Regular.ttf" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

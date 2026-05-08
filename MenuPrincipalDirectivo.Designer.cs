@@ -31,8 +31,8 @@
             this.title = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAlumnos = new System.Windows.Forms.Button();
-            this.btnGenerarReporte = new System.Windows.Forms.Button();
             this.btnBoletas = new System.Windows.Forms.Button();
+            this.btnGenerarReporte = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -46,8 +46,8 @@
             this.title.Location = new System.Drawing.Point(0, 0);
             this.title.Margin = new System.Windows.Forms.Padding(0);
             this.title.Name = "title";
-            this.title.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.title.Size = new System.Drawing.Size(784, 80);
+            this.title.Padding = new System.Windows.Forms.Padding(0, 18, 0, 0);
+            this.title.Size = new System.Drawing.Size(1045, 98);
             this.title.TabIndex = 0;
             this.title.Text = "Sistema Gestor Académico";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -57,9 +57,9 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 5;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 220F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 220F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 293F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 293F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.btnAlumnos, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnBoletas, 3, 1);
@@ -67,17 +67,18 @@
             this.tableLayoutPanel1.Controls.Add(this.btnSalir, 3, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 80);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 98);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(784, 481);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1045, 592);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // btnAlumnos
@@ -89,34 +90,15 @@
             this.btnAlumnos.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlumnos.Image = global::SGA_Client.Properties.Resources.alumnosIcon;
             this.btnAlumnos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlumnos.Location = new System.Drawing.Point(160, 120);
+            this.btnAlumnos.Location = new System.Drawing.Point(213, 147);
             this.btnAlumnos.Margin = new System.Windows.Forms.Padding(0);
             this.btnAlumnos.Name = "btnAlumnos";
-            this.btnAlumnos.Size = new System.Drawing.Size(220, 64);
+            this.btnAlumnos.Size = new System.Drawing.Size(293, 79);
             this.btnAlumnos.TabIndex = 1;
             this.btnAlumnos.Text = "Alumnos";
             this.btnAlumnos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlumnos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAlumnos.UseVisualStyleBackColor = false;
-            // 
-            // btnGenerarReporte
-            // 
-            this.btnGenerarReporte.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGenerarReporte.BackColor = System.Drawing.Color.White;
-            this.btnGenerarReporte.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGenerarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerarReporte.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerarReporte.Image = global::SGA_Client.Properties.Resources.calificacionesIcon;
-            this.btnGenerarReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGenerarReporte.Location = new System.Drawing.Point(160, 208);
-            this.btnGenerarReporte.Margin = new System.Windows.Forms.Padding(0);
-            this.btnGenerarReporte.Name = "btnGenerarReporte";
-            this.btnGenerarReporte.Size = new System.Drawing.Size(220, 64);
-            this.btnGenerarReporte.TabIndex = 4;
-            this.btnGenerarReporte.Text = "Calificaciones";
-            this.btnGenerarReporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGenerarReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGenerarReporte.UseVisualStyleBackColor = false;
             // 
             // btnBoletas
             // 
@@ -127,15 +109,34 @@
             this.btnBoletas.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBoletas.Image = global::SGA_Client.Properties.Resources.boletasIcon;
             this.btnBoletas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBoletas.Location = new System.Drawing.Point(404, 120);
+            this.btnBoletas.Location = new System.Drawing.Point(538, 147);
             this.btnBoletas.Margin = new System.Windows.Forms.Padding(0);
             this.btnBoletas.Name = "btnBoletas";
-            this.btnBoletas.Size = new System.Drawing.Size(220, 64);
+            this.btnBoletas.Size = new System.Drawing.Size(293, 79);
             this.btnBoletas.TabIndex = 5;
             this.btnBoletas.Text = "Boletas";
             this.btnBoletas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBoletas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBoletas.UseVisualStyleBackColor = false;
+            // 
+            // btnGenerarReporte
+            // 
+            this.btnGenerarReporte.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGenerarReporte.BackColor = System.Drawing.Color.White;
+            this.btnGenerarReporte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarReporte.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarReporte.Image = global::SGA_Client.Properties.Resources.calificacionesIcon;
+            this.btnGenerarReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerarReporte.Location = new System.Drawing.Point(213, 256);
+            this.btnGenerarReporte.Margin = new System.Windows.Forms.Padding(0);
+            this.btnGenerarReporte.Name = "btnGenerarReporte";
+            this.btnGenerarReporte.Size = new System.Drawing.Size(293, 79);
+            this.btnGenerarReporte.TabIndex = 4;
+            this.btnGenerarReporte.Text = "Calificaciones";
+            this.btnGenerarReporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerarReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenerarReporte.UseVisualStyleBackColor = false;
             // 
             // btnSalir
             // 
@@ -146,10 +147,10 @@
             this.btnSalir.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Image = global::SGA_Client.Properties.Resources.salirIcon;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(404, 208);
+            this.btnSalir.Location = new System.Drawing.Point(538, 256);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(0);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(220, 64);
+            this.btnSalir.Size = new System.Drawing.Size(293, 79);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,17 +160,19 @@
             // 
             // MenuPrincipalDirectivo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(1045, 690);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.title);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1061, 728);
             this.Name = "MenuPrincipalDirectivo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InicioView";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuPrincipalDirectivo_FormClosing);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
