@@ -63,6 +63,16 @@ namespace SGA_Client.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agregarIcon {
+            get {
+                object obj = ResourceManager.GetObject("agregarIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap alumnosIcon {
             get {
                 object obj = ResourceManager.GetObject("alumnosIcon", resourceCulture);
@@ -103,6 +113,26 @@ namespace SGA_Client.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap editarIcon {
+            get {
+                object obj = ResourceManager.GetObject("editarIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eliminarIcon {
+            get {
+                object obj = ResourceManager.GetObject("eliminarIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap examenesIcon {
             get {
                 object obj = ResourceManager.GetObject("examenesIcon", resourceCulture);
@@ -113,9 +143,39 @@ namespace SGA_Client.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap filtrarIcon {
+            get {
+                object obj = ResourceManager.GetObject("filtrarIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap guardarIcon {
+            get {
+                object obj = ResourceManager.GetObject("guardarIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap salirIcon {
             get {
                 object obj = ResourceManager.GetObject("salirIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap salirSmallIcon {
+            get {
+                object obj = ResourceManager.GetObject("salirSmallIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

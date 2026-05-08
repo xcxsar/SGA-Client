@@ -11,6 +11,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SGA_Client.Forms;
 
 namespace SGA_Client
 {
@@ -81,6 +82,12 @@ namespace SGA_Client
             {
                 Application.Exit();
             }
+        }
+
+        private void btnAlumnos_Click(object sender, EventArgs e)
+        {
+            AlumnosView alumnosView = new AlumnosView();
+            alumnosView.ShowDialog(this);
         }
     }
 }
