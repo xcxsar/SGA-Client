@@ -37,8 +37,8 @@ namespace SGA_Client.Models
     }
     public class UsuarioLoginModel
     {
-        public string Correo { get; set; }
-        public string Contrasena { get; set; }
+        public string correo { get; set; }
+        public string contrasena { get; set; }
     }
 
 }

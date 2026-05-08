@@ -59,8 +59,8 @@ namespace SGA_Client
 
             var usuario = new UsuarioLoginModel
             {
-                Correo = textBoxUsuario.Text.Trim(),
-                Contrasena = textBoxPassword.Text.Trim()
+                correo = textBoxUsuario.Text.Trim(),
+                contrasena = textBoxPassword.Text.Trim()
             };
 
             string json = JsonConvert.SerializeObject(usuario);
@@ -86,7 +86,7 @@ namespace SGA_Client
                     };
 
                     SesionGlobal.Iniciar(u);
-                    MessageBox.Show($"Bienvenido {usuario.Correo}");
+                    MessageBox.Show($"Bienvenido {usuario.correo}");
 
                     Form formularioAMostrar;
 
