@@ -131,5 +131,19 @@
   <ItemGroup>
     <Folder Include="Forms\Edición\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\agregar.png" />
+    <Content Include="Images\alumnos.png" />
+    <Content Include="Images\asistencias.png" />
+    <Content Include="Images\boletas.png" />
+    <Content Include="Images\calificaciones.png" />
+    <Content Include="Images\editar.png" />
+    <Content Include="Images\eliminar.png" />
+    <Content Include="Images\examenes.png" />
+    <Content Include="Images\filtrar.png" />
+    <Content Include="Images\guardar.png" />
+    <Content Include="Images\salir.png" />
+    <Content Include="Images\salirPequeño.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
