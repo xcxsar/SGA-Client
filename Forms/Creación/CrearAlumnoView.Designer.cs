@@ -45,14 +45,14 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,8 +88,8 @@
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 4, 4);
             this.tableLayoutPanel1.Controls.Add(this.comboBox2, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox3, 3, 6);
             this.tableLayoutPanel1.Controls.Add(this.textBox4, 3, 7);
+            this.tableLayoutPanel1.Controls.Add(this.textBox8, 3, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -305,19 +305,6 @@
             this.textBox3.Size = new System.Drawing.Size(140, 20);
             this.textBox3.TabIndex = 15;
             // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 2);
-            this.textBox4.Location = new System.Drawing.Point(410, 330);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox4.MaxLength = 40;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(300, 20);
-            this.textBox4.TabIndex = 16;
-            // 
             // textBox5
             // 
             this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -330,12 +317,13 @@
             // 
             // textBox7
             // 
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox7, 2);
             this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox7.Location = new System.Drawing.Point(410, 418);
             this.textBox7.Margin = new System.Windows.Forms.Padding(10);
             this.textBox7.MaxLength = 40;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(140, 20);
+            this.textBox7.Size = new System.Drawing.Size(300, 20);
             this.textBox7.TabIndex = 19;
             // 
             // textBox6
@@ -385,17 +373,28 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(300, 20);
             this.dateTimePicker1.TabIndex = 22;
             // 
-            // comboBox3
+            // textBox4
             // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(410, 286);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(10);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(140, 21);
-            this.comboBox3.TabIndex = 23;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 2);
+            this.textBox4.Location = new System.Drawing.Point(410, 330);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(10);
+            this.textBox4.MaxLength = 40;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(300, 20);
+            this.textBox4.TabIndex = 16;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox8.Location = new System.Drawing.Point(410, 288);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(10);
+            this.textBox8.MaxLength = 40;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(140, 20);
+            this.textBox8.TabIndex = 23;
             // 
             // CrearAlumnoView
             // 
@@ -439,6 +438,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox textBox8;
     }
 }
