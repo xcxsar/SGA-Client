@@ -51,36 +51,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MenuPrincipalDirectivo.cs">
+    <Compile Include="Forms\Creación\CrearAlumnoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipalDirectivo.Designer.cs">
+    <Compile Include="Forms\Creación\CrearAlumnoView.Designer.cs">
+      <DependentUpon>CrearAlumnoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Listas\AlumnosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Listas\AlumnosView.Designer.cs">
+      <DependentUpon>AlumnosView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuPrincipalDirectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuPrincipalDirectivo.Designer.cs">
       <DependentUpon>MenuPrincipalDirectivo.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\UsuarioModel.cs" />
-    <Compile Include="UIHelper.cs" />
-    <Compile Include="InicioDeSesionView.cs">
+    <Compile Include="Classes\UIHelper.cs" />
+    <Compile Include="Forms\InicioDeSesionView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InicioDeSesionView.Designer.cs">
+    <Compile Include="Forms\InicioDeSesionView.Designer.cs">
       <DependentUpon>InicioDeSesionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipalProfesor.cs">
+    <Compile Include="Forms\MenuPrincipalProfesor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipalProfesor.Designer.cs">
+    <Compile Include="Forms\MenuPrincipalProfesor.Designer.cs">
       <DependentUpon>MenuPrincipalProfesor.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManejadorDeFuentes.cs" />
+    <Compile Include="Classes\ManejadorDeFuentes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="InicioDeSesionView.resx">
+    <EmbeddedResource Include="Forms\Creación\CrearAlumnoView.resx">
+      <DependentUpon>CrearAlumnoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Listas\AlumnosView.resx">
+      <DependentUpon>AlumnosView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InicioDeSesionView.resx">
       <DependentUpon>InicioDeSesionView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipalDirectivo.resx">
+    <EmbeddedResource Include="Forms\MenuPrincipalDirectivo.resx">
       <DependentUpon>MenuPrincipalDirectivo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipalProfesor.resx">
+    <EmbeddedResource Include="Forms\MenuPrincipalProfesor.resx">
       <DependentUpon>MenuPrincipalProfesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -109,6 +127,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Edición\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\agregar.png" />
+    <Content Include="Images\alumnos.png" />
+    <Content Include="Images\asistencias.png" />
+    <Content Include="Images\boletas.png" />
+    <Content Include="Images\calificaciones.png" />
+    <Content Include="Images\editar.png" />
+    <Content Include="Images\eliminar.png" />
+    <Content Include="Images\examenes.png" />
+    <Content Include="Images\filtrar.png" />
+    <Content Include="Images\guardar.png" />
+    <Content Include="Images\salir.png" />
+    <Content Include="Images\salirPequeño.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
