@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using SGA_Client.Forms.Creación;
 using SGA_Client.Models;
 using System;
 using System.Collections.Generic;
@@ -79,6 +80,12 @@ namespace SGA_Client
             {
                 Application.Exit();
             }
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            RegistrarUsuarioView registrarUsuarioView = new RegistrarUsuarioView();
+            registrarUsuarioView.ShowDialog(this);
         }
     }
 }
