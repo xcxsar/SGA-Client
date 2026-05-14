@@ -89,5 +89,11 @@ namespace SGA_Client
             AlumnosView alumnosView = new AlumnosView();
             alumnosView.ShowDialog(this);
         }
+
+        private void btnAsistencias_Click(object sender, EventArgs e)
+        {
+            AsistenciasView asistenciasView = new AsistenciasView();
+            asistenciasView.ShowDialog(this);
+        }
     }
 }

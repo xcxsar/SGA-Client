@@ -122,6 +122,7 @@
             this.btnAsistencias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAsistencias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAsistencias.UseVisualStyleBackColor = false;
+            this.btnAsistencias.Click += new System.EventHandler(this.btnAsistencias_Click);
             // 
             // btnCalificaciones
             // 
