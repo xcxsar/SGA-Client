@@ -93,6 +93,16 @@ namespace SGA_Client.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ausenteIcon {
+            get {
+                object obj = ResourceManager.GetObject("ausenteIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boletasIcon {
             get {
                 object obj = ResourceManager.GetObject("boletasIcon", resourceCulture);
@@ -156,6 +166,16 @@ namespace SGA_Client.Properties {
         internal static System.Drawing.Bitmap guardarIcon {
             get {
                 object obj = ResourceManager.GetObject("guardarIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap presenteIcon {
+            get {
+                object obj = ResourceManager.GetObject("presenteIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AsistenciasView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AsistenciasView.Designer.cs">
+      <DependentUpon>AsistenciasView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Creación\CrearAlumnoView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     <Compile Include="Classes\ManejadorDeFuentes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AsistenciasView.resx">
+      <DependentUpon>AsistenciasView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Creación\CrearAlumnoView.resx">
       <DependentUpon>CrearAlumnoView.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +153,7 @@
     <Content Include="Images\agregar.png" />
     <Content Include="Images\alumnos.png" />
     <Content Include="Images\asistencias.png" />
+    <Content Include="Images\ausente.png" />
     <Content Include="Images\boletas.png" />
     <Content Include="Images\calificaciones.png" />
     <Content Include="Images\editar.png" />
@@ -151,6 +161,7 @@
     <Content Include="Images\examenes.png" />
     <Content Include="Images\filtrar.png" />
     <Content Include="Images\guardar.png" />
+    <Content Include="Images\presente.png" />
     <Content Include="Images\salir.png" />
     <Content Include="Images\salirPequeño.png" />
   </ItemGroup>
