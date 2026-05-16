@@ -38,6 +38,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.title = new System.Windows.Forms.Label();
             this.header = new System.Windows.Forms.Label();
+            this.lbOlvidarContraseña = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +61,7 @@
             this.tableLayoutPanel1.Controls.Add(this.labelUsuario, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.header, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbOlvidarContraseña, 4, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -71,8 +73,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1043, 681);
@@ -84,10 +86,10 @@
             this.buttonIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonIniciarSesion.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIniciarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.buttonIniciarSesion.Location = new System.Drawing.Point(699, 475);
+            this.buttonIniciarSesion.Location = new System.Drawing.Point(699, 484);
             this.buttonIniciarSesion.Margin = new System.Windows.Forms.Padding(0, 0, 20, 0);
             this.buttonIniciarSesion.Name = "buttonIniciarSesion";
-            this.buttonIniciarSesion.Size = new System.Drawing.Size(153, 37);
+            this.buttonIniciarSesion.Size = new System.Drawing.Size(153, 38);
             this.buttonIniciarSesion.TabIndex = 16;
             this.buttonIniciarSesion.Text = "Iniciar sesión";
             this.buttonIniciarSesion.UseVisualStyleBackColor = true;
@@ -99,10 +101,10 @@
             this.buttonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSalir.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.buttonSalir.Location = new System.Drawing.Point(533, 475);
+            this.buttonSalir.Location = new System.Drawing.Point(533, 484);
             this.buttonSalir.Margin = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.buttonSalir.Name = "buttonSalir";
-            this.buttonSalir.Size = new System.Drawing.Size(153, 37);
+            this.buttonSalir.Size = new System.Drawing.Size(153, 38);
             this.buttonSalir.TabIndex = 17;
             this.buttonSalir.Text = "Salir";
             this.buttonSalir.UseVisualStyleBackColor = true;
@@ -113,7 +115,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.textBoxPassword, 3);
             this.textBoxPassword.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.textBoxPassword.Location = new System.Drawing.Point(533, 426);
+            this.textBoxPassword.Location = new System.Drawing.Point(533, 417);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(319, 32);
@@ -124,7 +126,7 @@
             this.labelPassword.AutoSize = true;
             this.labelPassword.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.labelPassword.Location = new System.Drawing.Point(533, 396);
+            this.labelPassword.Location = new System.Drawing.Point(533, 387);
             this.labelPassword.Margin = new System.Windows.Forms.Padding(20, 7, 0, 0);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(116, 24);
@@ -136,7 +138,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.textBoxUsuario, 3);
             this.textBoxUsuario.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.textBoxUsuario.Location = new System.Drawing.Point(533, 352);
+            this.textBoxUsuario.Location = new System.Drawing.Point(533, 343);
             this.textBoxUsuario.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(319, 32);
@@ -147,7 +149,7 @@
             this.labelUsuario.AutoSize = true;
             this.labelUsuario.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.labelUsuario.Location = new System.Drawing.Point(533, 322);
+            this.labelUsuario.Location = new System.Drawing.Point(533, 313);
             this.labelUsuario.Margin = new System.Windows.Forms.Padding(20, 7, 0, 0);
             this.labelUsuario.Name = "labelUsuario";
             this.labelUsuario.Size = new System.Drawing.Size(84, 24);
@@ -186,13 +188,26 @@
             this.header.Dock = System.Windows.Forms.DockStyle.Fill;
             this.header.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
-            this.header.Location = new System.Drawing.Point(346, 167);
+            this.header.Location = new System.Drawing.Point(346, 158);
             this.header.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.header.Name = "header";
             this.header.Size = new System.Drawing.Size(693, 148);
             this.header.TabIndex = 21;
             this.header.Text = "Bienvenido al Sistema de Gestión Académica";
             this.header.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbOlvidarContraseña
+            // 
+            this.lbOlvidarContraseña.AutoSize = true;
+            this.lbOlvidarContraseña.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbOlvidarContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbOlvidarContraseña.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lbOlvidarContraseña.Location = new System.Drawing.Point(702, 454);
+            this.lbOlvidarContraseña.Name = "lbOlvidarContraseña";
+            this.lbOlvidarContraseña.Size = new System.Drawing.Size(143, 15);
+            this.lbOlvidarContraseña.TabIndex = 23;
+            this.lbOlvidarContraseña.Text = "Olvidaste tu Contraseña?";
+            this.lbOlvidarContraseña.Click += new System.EventHandler(this.lbOlvidarContraseña_Click);
             // 
             // InicioDeSesionView
             // 
@@ -226,6 +241,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.Label header;
+        private System.Windows.Forms.Label lbOlvidarContraseña;
     }
 }
 

@@ -51,23 +51,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Creación\CrearAlumnoView.cs">
+    <Compile Include="Forms\Creación\Alumnos\ModificarAlumnoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Creación\CrearAlumnoView.Designer.cs">
+    <Compile Include="Forms\Creación\Alumnos\ModificarAlumnoView.Designer.cs">
+      <DependentUpon>ModificarAlumnoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Creación\Alumnos\CrearAlumnoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Creación\Alumnos\CrearAlumnoView.Designer.cs">
       <DependentUpon>CrearAlumnoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Creación\RegistrarUsuarioView.cs">
+    <Compile Include="Forms\Creación\Usuarios\ModificarUsuarioView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Creación\RegistrarUsuarioView.Designer.cs">
+    <Compile Include="Forms\Creación\Usuarios\ModificarUsuarioView.Designer.cs">
+      <DependentUpon>ModificarUsuarioView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Creación\Usuarios\RegistrarUsuarioView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Creación\Usuarios\RegistrarUsuarioView.Designer.cs">
       <DependentUpon>RegistrarUsuarioView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Listas\AlumnosView.cs">
+    <Compile Include="Forms\Listas\Alumnos\AlumnosDireccionView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Listas\AlumnosView.Designer.cs">
-      <DependentUpon>AlumnosView.cs</DependentUpon>
+    <Compile Include="Forms\Listas\Alumnos\AlumnosDireccionView.Designer.cs">
+      <DependentUpon>AlumnosDireccionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Listas\Alumnos\AlumnosProfesorView .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Listas\Alumnos\AlumnosProfesorView .Designer.cs">
+      <DependentUpon>AlumnosProfesorView .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Creación\Usuarios\UsuariosCambiarContrasenaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Creación\Usuarios\UsuariosCambiarContrasenaView.Designer.cs">
+      <DependentUpon>UsuariosCambiarContrasenaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Listas\Usuarios\UsuariosDireccionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Listas\Usuarios\UsuariosDireccionView.Designer.cs">
+      <DependentUpon>UsuariosDireccionView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MenuPrincipalDirectivo.cs">
       <SubType>Form</SubType>
@@ -75,6 +105,7 @@
     <Compile Include="Forms\MenuPrincipalDirectivo.Designer.cs">
       <DependentUpon>MenuPrincipalDirectivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\AlumnoModel.cs" />
     <Compile Include="Models\UsuarioModel.cs" />
     <Compile Include="Classes\UIHelper.cs" />
     <Compile Include="Forms\InicioDeSesionView.cs">
@@ -92,17 +123,32 @@
     <Compile Include="Classes\ManejadorDeFuentes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Creación\CrearAlumnoView.resx">
+    <EmbeddedResource Include="Forms\Creación\Alumnos\ModificarAlumnoView.resx">
+      <DependentUpon>ModificarAlumnoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Creación\Alumnos\CrearAlumnoView.resx">
       <DependentUpon>CrearAlumnoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Creación\RegistrarUsuarioView.resx">
-      <DependentUpon>RegistrarUsuarioView.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Creación\Usuarios\ModificarUsuarioView.resx">
+      <DependentUpon>ModificarUsuarioView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Listas\AlumnosView.resx">
-      <DependentUpon>AlumnosView.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Creación\Usuarios\RegistrarUsuarioView.resx">
+      <DependentUpon>RegistrarUsuarioView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InicioDeSesionView.resx">
       <DependentUpon>InicioDeSesionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Listas\Alumnos\AlumnosDireccionView.resx">
+      <DependentUpon>AlumnosDireccionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Listas\Alumnos\AlumnosProfesorView .resx">
+      <DependentUpon>AlumnosProfesorView .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Creación\Usuarios\UsuariosCambiarContrasenaView.resx">
+      <DependentUpon>UsuariosCambiarContrasenaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Listas\Usuarios\UsuariosDireccionView.resx">
+      <DependentUpon>UsuariosDireccionView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuPrincipalDirectivo.resx">
       <DependentUpon>MenuPrincipalDirectivo.cs</DependentUpon>
@@ -121,6 +167,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Fonts\Bevan-Regular.ttf" />
+    <None Include=".gitattributes" />
     <None Include="Fonts\Inter-Bold.ttf" />
     <None Include="Fonts\Inter-Regular.ttf" />
     <None Include="packages.config" />

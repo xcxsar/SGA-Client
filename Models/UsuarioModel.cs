@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace SGA_Client.Models
 {
@@ -15,7 +16,22 @@ namespace SGA_Client.Models
 
         public string tipoUsuario { get; set; }
 
+        public string contrasena { get; set; }
+        public string correo { get; set; }
+
+        public string nombre { get; set; }
+
         public string token { get; set; }
+    }
+    public class UsuarioCreationModel
+    {
+        
+        public string tipoUsuario { get; set; }
+
+        public string contrasena { get; set; }
+        public string correo { get; set; }
+
+        public string nombre { get; set; }
     }
     public static class SesionGlobal
     {
@@ -27,6 +43,9 @@ namespace SGA_Client.Models
         public static void Iniciar(UsuarioModel usuarioActual)
         {
             UsuarioActual = usuarioActual;
+
+            WebCliente.DefaultRequestHeaders.Authorization =
+            new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", usuarioActual.token);
         }
 
         public static void Cerrar()
@@ -40,5 +59,28 @@ namespace SGA_Client.Models
         public string correo { get; set; }
         public string contrasena { get; set; }
     }
+
+    public class UsersGridDto
+    {
+        public string nombre { get; set; }
+
+        public string correo { get; set; }
+        public string tipoUsuario { get; set; }
+        public int usuarioId { get; set; }
+    }
+
+    public class UsersFiltrosModel
+    {
+        public string nombre { get; set; }
+        public string tipoUsuario { get; set; }
+    }
+
+    public class UsuarioCambioContrasenaModel
+    {
+        public string correo { get; set; }
+        public string contrasena { get; set; }
+        public string codigoVerificacion { get; set; }
+    }
+
 
 }

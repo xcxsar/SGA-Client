@@ -86,7 +86,7 @@ namespace SGA_Client
 
         private void btnAlumnos_Click(object sender, EventArgs e)
         {
-            AlumnosView alumnosView = new AlumnosView();
+            AlumnosProfesorView alumnosView = new AlumnosProfesorView();
             alumnosView.ShowDialog(this);
         }
     }
